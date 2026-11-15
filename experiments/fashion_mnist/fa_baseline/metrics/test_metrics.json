@@ -3,9 +3,11 @@
   "train_size": 10800,
   "validation_size": 6000,
   "test_size": 10000,
-  "checkpoint_epoch": 14,
-  "validation_accuracy": 0.9013333333333333,
-  "test_accuracy": 0.8885,
-  "macro_f1": 0.8879213721519973,
+  "checkpoint_epoch": 26,
+  "checkpoint_stage": 2,
+  "validation_loss": 0.27308361188570657,
+  "validation_accuracy": 0.9026666666666666,
+  "test_accuracy": 0.893,
+  "macro_f1": 0.892674991620833,
   "seed": 42
 }

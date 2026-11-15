@@ -1,0 +1,29 @@
+[
+  {
+    "experiment": "F-A baseline",
+    "train_size": 10800,
+    "validation_accuracy": 0.9013333333333333,
+    "test_accuracy": 0.8885,
+    "macro_f1": 0.8879213721519973,
+    "target_errors": 110,
+    "reverse_target_errors": 97
+  },
+  {
+    "experiment": "Strategy 1",
+    "train_size": 11800,
+    "validation_accuracy": 0.9013333333333333,
+    "test_accuracy": 0.894,
+    "macro_f1": 0.8934619418855194,
+    "target_errors": 141,
+    "reverse_target_errors": 71
+  },
+  {
+    "experiment": "Strategy 2",
+    "train_size": 11800,
+    "validation_accuracy": 0.9036666666666666,
+    "test_accuracy": 0.8947,
+    "macro_f1": 0.8937716674647896,
+    "target_errors": 151,
+    "reverse_target_errors": 70
+  }
+]

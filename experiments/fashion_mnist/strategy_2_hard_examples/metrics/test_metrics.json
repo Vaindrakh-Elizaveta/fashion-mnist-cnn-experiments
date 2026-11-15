@@ -1,0 +1,10 @@
+{
+  "experiment": "Strategy 2",
+  "train_size": null,
+  "test_size": 10000,
+  "checkpoint_epoch": 15,
+  "validation_accuracy": 0.9036666666666666,
+  "test_accuracy": 0.8947,
+  "macro_f1": 0.8937716674647896,
+  "seed": 42
+}

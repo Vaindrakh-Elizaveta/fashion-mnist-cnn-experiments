@@ -1,7 +1,13 @@
 {
-  "checkpoint_epoch": 15,
-  "checkpoint_validation_accuracy": 0.9278333333333333,
+  "experiment": "Full F baseline",
+  "train_size": 54000,
+  "validation_size": 6000,
   "test_size": 10000,
-  "accuracy": 0.9162,
-  "macro_f1": 0.9156375132180606
+  "checkpoint_epoch": 24,
+  "checkpoint_stage": 2,
+  "validation_loss": 0.19537509195009867,
+  "validation_accuracy": 0.9311666666666667,
+  "test_accuracy": 0.92,
+  "macro_f1": 0.9197469417870059,
+  "seed": 42
 }

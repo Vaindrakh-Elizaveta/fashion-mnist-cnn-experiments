@@ -1,0 +1,140 @@
+{
+  "experiment": "Model-independent error check",
+  "runs": 5,
+  "seeds": [
+    42,
+    43,
+    44,
+    45,
+    46
+  ],
+  "control_dataset": "F-A validation",
+  "control_size": 6000,
+  "device": "cuda",
+  "q_definition": "number of models with error / R",
+  "S_definition": "images with error in at least one model",
+  "runs_summary": [
+    {
+      "run": 1,
+      "seed": 42,
+      "best_epoch": 14,
+      "best_stage": 1,
+      "validation_loss": 0.27486505142847695,
+      "validation_accuracy": 0.9015,
+      "control_accuracy": 0.9015,
+      "error_count": 591
+    },
+    {
+      "run": 2,
+      "seed": 43,
+      "best_epoch": 16,
+      "best_stage": 1,
+      "validation_loss": 0.28206587958335877,
+      "validation_accuracy": 0.903,
+      "control_accuracy": 0.903,
+      "error_count": 582
+    },
+    {
+      "run": 3,
+      "seed": 44,
+      "best_epoch": 31,
+      "best_stage": 2,
+      "validation_loss": 0.27071920041243236,
+      "validation_accuracy": 0.9031666666666667,
+      "control_accuracy": 0.9031666666666667,
+      "error_count": 581
+    },
+    {
+      "run": 4,
+      "seed": 45,
+      "best_epoch": 28,
+      "best_stage": 2,
+      "validation_loss": 0.28228928287823996,
+      "validation_accuracy": 0.9056666666666666,
+      "control_accuracy": 0.9056666666666666,
+      "error_count": 566
+    },
+    {
+      "run": 5,
+      "seed": 46,
+      "best_epoch": 26,
+      "best_stage": 2,
+      "validation_loss": 0.280351476709048,
+      "validation_accuracy": 0.9055,
+      "control_accuracy": 0.9055,
+      "error_count": 567
+    }
+  ],
+  "q_average_by_class": [
+    {
+      "class_id": 0,
+      "class_name": "T-shirt/top",
+      "class_size": 600,
+      "errors_in_at_least_one_model": 129,
+      "q_average": 0.5953488372093024
+    },
+    {
+      "class_id": 1,
+      "class_name": "Trouser",
+      "class_size": 600,
+      "errors_in_at_least_one_model": 17,
+      "q_average": 0.7294117647058824
+    },
+    {
+      "class_id": 2,
+      "class_name": "Pullover",
+      "class_size": 600,
+      "errors_in_at_least_one_model": 158,
+      "q_average": 0.6278481012658227
+    },
+    {
+      "class_id": 3,
+      "class_name": "Dress",
+      "class_size": 600,
+      "errors_in_at_least_one_model": 94,
+      "q_average": 0.6127659574468086
+    },
+    {
+      "class_id": 4,
+      "class_name": "Coat",
+      "class_size": 600,
+      "errors_in_at_least_one_model": 156,
+      "q_average": 0.5884615384615385
+    },
+    {
+      "class_id": 5,
+      "class_name": "Sandal",
+      "class_size": 600,
+      "errors_in_at_least_one_model": 32,
+      "q_average": 0.5375000000000001
+    },
+    {
+      "class_id": 6,
+      "class_name": "Shirt",
+      "class_size": 600,
+      "errors_in_at_least_one_model": 255,
+      "q_average": 0.6352941176470588
+    },
+    {
+      "class_id": 7,
+      "class_name": "Sneaker",
+      "class_size": 600,
+      "errors_in_at_least_one_model": 44,
+      "q_average": 0.4545454545454545
+    },
+    {
+      "class_id": 8,
+      "class_name": "Bag",
+      "class_size": 600,
+      "errors_in_at_least_one_model": 22,
+      "q_average": 0.6454545454545456
+    },
+    {
+      "class_id": 9,
+      "class_name": "Ankle boot",
+      "class_size": 600,
+      "errors_in_at_least_one_model": 40,
+      "q_average": 0.655
+    }
+  ]
+}

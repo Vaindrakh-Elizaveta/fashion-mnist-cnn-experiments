@@ -255,3 +255,276 @@ def fit(
     )
 
     return history
+
+
+import copy
+import json
+from pathlib import Path
+
+import torch
+
+
+def fit_two_stage(
+    model,
+    train_loader,
+    validation_loader,
+    criterion,
+    optimizer,
+    device,
+    epochs=100,
+    patience=10,
+    min_delta=1e-4,
+    lr_factor=0.1,
+    checkpoint_path=None,
+    history_path=None,
+    checkpoint_metadata=None,
+):
+    """
+    Двухэтапное обучение модели.
+
+    Этап 1:
+        обучение с исходным learning rate.
+
+    Этап 2:
+        загрузка лучшей модели с этапа 1,
+        уменьшение learning rate в 10 раз,
+        продолжение обучения.
+
+    На каждом этапе используется early stopping
+    по Validation Loss.
+    """
+
+    history = {
+        "epoch": [],
+        "stage": [],
+        "learning_rate": [],
+        "train_loss": [],
+        "train_accuracy": [],
+        "validation_loss": [],
+        "validation_accuracy": [],
+    }
+
+    if checkpoint_path is not None:
+        checkpoint_path = Path(checkpoint_path)
+        checkpoint_path.parent.mkdir(
+            parents=True,
+            exist_ok=True,
+        )
+
+    if history_path is not None:
+        history_path = Path(history_path)
+        history_path.parent.mkdir(
+            parents=True,
+            exist_ok=True,
+        )
+
+    best_validation_loss = float("inf")
+    best_validation_accuracy = None
+    best_epoch = None
+    best_stage = None
+
+    best_model_state = None
+    best_optimizer_state = None
+
+    for stage in [1, 2]:
+
+        # Перед вторым этапом возвращаемся
+        # к лучшей модели первого этапа
+        if stage == 2:
+            if best_model_state is None:
+                raise RuntimeError(
+                    "Не найдена лучшая модель первого этапа."
+                )
+
+            model.load_state_dict(
+                best_model_state
+            )
+
+            if best_optimizer_state is not None:
+                optimizer.load_state_dict(
+                    best_optimizer_state
+                )
+
+            # Уменьшаем learning rate
+            # в 10 раз
+            for param_group in optimizer.param_groups:
+                param_group["lr"] *= lr_factor
+
+            print()
+            print(
+                "Этап 2: learning rate уменьшен до",
+                optimizer.param_groups[0]["lr"],
+            )
+
+        bad_epochs = 0
+
+        for _ in range(epochs):
+
+            global_epoch = len(
+                history["epoch"]
+            ) + 1
+
+            train_loss, train_accuracy = (
+                train_one_epoch(
+                    model=model,
+                    train_loader=train_loader,
+                    criterion=criterion,
+                    optimizer=optimizer,
+                    device=device,
+                )
+            )
+
+            validation_loss, validation_accuracy = (
+                evaluate(
+                    model=model,
+                    data_loader=validation_loader,
+                    criterion=criterion,
+                    device=device,
+                )
+            )
+
+            current_learning_rate = (
+                optimizer.param_groups[0]["lr"]
+            )
+
+            history["epoch"].append(
+                global_epoch
+            )
+
+            history["stage"].append(stage)
+
+            history["learning_rate"].append(
+                current_learning_rate
+            )
+
+            history["train_loss"].append(
+                train_loss
+            )
+
+            history["train_accuracy"].append(
+                train_accuracy
+            )
+
+            history["validation_loss"].append(
+                validation_loss
+            )
+
+            history["validation_accuracy"].append(
+                validation_accuracy
+            )
+
+            print(
+                f"Stage {stage} | "
+                f"Epoch {global_epoch:03d} | "
+                f"lr: {current_learning_rate:.6f} | "
+                f"train loss: {train_loss:.4f} | "
+                f"train accuracy: {train_accuracy:.4f} | "
+                f"validation loss: {validation_loss:.4f} | "
+                f"validation accuracy: {validation_accuracy:.4f}"
+            )
+
+            is_better = (
+                validation_loss
+                < best_validation_loss - min_delta
+            )
+
+            if is_better:
+                best_validation_loss = (
+                    validation_loss
+                )
+
+                best_validation_accuracy = (
+                    validation_accuracy
+                )
+
+                best_epoch = global_epoch
+                best_stage = stage
+                bad_epochs = 0
+
+                best_model_state = copy.deepcopy(
+                    model.state_dict()
+                )
+
+                best_optimizer_state = copy.deepcopy(
+                    optimizer.state_dict()
+                )
+
+            else:
+                bad_epochs += 1
+
+            if bad_epochs >= patience:
+                print(
+                    f"Early stopping на этапе {stage}. "
+                    f"Нет улучшения {patience} эпох."
+                )
+                break
+
+    if best_model_state is None:
+        raise RuntimeError(
+            "Обучение не создало ни одного checkpoint."
+        )
+
+    # Восстанавливаем глобально лучшую модель
+    model.load_state_dict(
+        best_model_state
+    )
+
+    # Финальный checkpoint
+    checkpoint = {
+        "epoch": best_epoch,
+        "stage": best_stage,
+        "model_state_dict": best_model_state,
+        "optimizer_state_dict": best_optimizer_state,
+        "validation_loss": best_validation_loss,
+        "validation_accuracy": (
+            best_validation_accuracy
+        ),
+        "best_validation_loss": (
+            best_validation_loss
+        ),
+        "history": history,
+    }
+
+    if checkpoint_metadata is not None:
+        checkpoint.update(
+            checkpoint_metadata
+        )
+
+    if checkpoint_path is not None:
+        torch.save(
+            checkpoint,
+            checkpoint_path,
+        )
+
+    if history_path is not None:
+        history_path.write_text(
+            json.dumps(
+                history,
+                ensure_ascii=False,
+                indent=2,
+            ),
+            encoding="utf-8",
+        )
+
+    print()
+    print(
+        "Обучение завершено."
+    )
+    print(
+        "Лучшая эпоха:",
+        best_epoch,
+    )
+    print(
+        "Лучший этап:",
+        best_stage,
+    )
+    print(
+        "Минимальный Validation Loss:",
+        best_validation_loss,
+    )
+    print(
+        "Validation Accuracy на лучшей эпохе:",
+        best_validation_accuracy,
+    )
+
+    return history

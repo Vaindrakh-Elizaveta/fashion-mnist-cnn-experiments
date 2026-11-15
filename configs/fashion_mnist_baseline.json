@@ -8,19 +8,22 @@
   "training": {
     "seed": 42,
     "batch_size": 128,
-    "epochs": 15,
+    "epochs": 100,
+    "early_stopping_patience": 10,
+    "min_delta": 0.0001,
     "optimizer": "Adam",
     "learning_rate": 0.001,
+    "learning_rate_factor": 0.1,
     "weight_decay": 0.0001,
     "dropout": 0.3,
     "loss": "CrossEntropyLoss",
-    "device": "cpu"
+    "device": "cuda"
   },
   "runtime": {
     "python_version": "3.10.7",
-    "torch_version": "2.14.1+cpu",
-    "torchvision_version": "0.29.1+cpu",
-    "device": "cpu",
+    "torch_version": "2.6.0+cu124",
+    "torchvision_version": "0.21.0+cu124",
+    "device": "cuda",
     "trainable_parameters": 105962
   },
   "dataset_sizes": {

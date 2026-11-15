@@ -1,0 +1,934 @@
+{
+  "seed": 42,
+  "A_class_id": 6,
+  "A_class_name": "Shirt",
+  "B_class_id": 0,
+  "B_class_name": "T-shirt/top",
+  "strategy_1_added": 1000,
+  "strategy_2_added": 1000,
+  "total_validation_errors": 592,
+  "directional_errors": [
+    {
+      "true_class_id": 6,
+      "predicted_class_id": 0,
+      "true_class_name": "Shirt",
+      "predicted_class_name": "T-shirt/top",
+      "errors": 61
+    },
+    {
+      "true_class_id": 0,
+      "predicted_class_id": 6,
+      "true_class_name": "T-shirt/top",
+      "predicted_class_name": "Shirt",
+      "errors": 57
+    },
+    {
+      "true_class_id": 2,
+      "predicted_class_id": 4,
+      "true_class_name": "Pullover",
+      "predicted_class_name": "Coat",
+      "errors": 55
+    },
+    {
+      "true_class_id": 6,
+      "predicted_class_id": 4,
+      "true_class_name": "Shirt",
+      "predicted_class_name": "Coat",
+      "errors": 52
+    },
+    {
+      "true_class_id": 6,
+      "predicted_class_id": 2,
+      "true_class_name": "Shirt",
+      "predicted_class_name": "Pullover",
+      "errors": 47
+    },
+    {
+      "true_class_id": 4,
+      "predicted_class_id": 2,
+      "true_class_name": "Coat",
+      "predicted_class_name": "Pullover",
+      "errors": 42
+    },
+    {
+      "true_class_id": 2,
+      "predicted_class_id": 6,
+      "true_class_name": "Pullover",
+      "predicted_class_name": "Shirt",
+      "errors": 24
+    },
+    {
+      "true_class_id": 3,
+      "predicted_class_id": 4,
+      "true_class_name": "Dress",
+      "predicted_class_name": "Coat",
+      "errors": 22
+    },
+    {
+      "true_class_id": 6,
+      "predicted_class_id": 3,
+      "true_class_name": "Shirt",
+      "predicted_class_name": "Dress",
+      "errors": 21
+    },
+    {
+      "true_class_id": 0,
+      "predicted_class_id": 3,
+      "true_class_name": "T-shirt/top",
+      "predicted_class_name": "Dress",
+      "errors": 20
+    },
+    {
+      "true_class_id": 4,
+      "predicted_class_id": 6,
+      "true_class_name": "Coat",
+      "predicted_class_name": "Shirt",
+      "errors": 19
+    },
+    {
+      "true_class_id": 3,
+      "predicted_class_id": 6,
+      "true_class_name": "Dress",
+      "predicted_class_name": "Shirt",
+      "errors": 18
+    },
+    {
+      "true_class_id": 4,
+      "predicted_class_id": 3,
+      "true_class_name": "Coat",
+      "predicted_class_name": "Dress",
+      "errors": 16
+    },
+    {
+      "true_class_id": 7,
+      "predicted_class_id": 9,
+      "true_class_name": "Sneaker",
+      "predicted_class_name": "Ankle boot",
+      "errors": 15
+    },
+    {
+      "true_class_id": 9,
+      "predicted_class_id": 7,
+      "true_class_name": "Ankle boot",
+      "predicted_class_name": "Sneaker",
+      "errors": 12
+    },
+    {
+      "true_class_id": 5,
+      "predicted_class_id": 7,
+      "true_class_name": "Sandal",
+      "predicted_class_name": "Sneaker",
+      "errors": 11
+    },
+    {
+      "true_class_id": 2,
+      "predicted_class_id": 3,
+      "true_class_name": "Pullover",
+      "predicted_class_name": "Dress",
+      "errors": 10
+    },
+    {
+      "true_class_id": 5,
+      "predicted_class_id": 9,
+      "true_class_name": "Sandal",
+      "predicted_class_name": "Ankle boot",
+      "errors": 9
+    },
+    {
+      "true_class_id": 3,
+      "predicted_class_id": 1,
+      "true_class_name": "Dress",
+      "predicted_class_name": "Trouser",
+      "errors": 8
+    },
+    {
+      "true_class_id": 7,
+      "predicted_class_id": 5,
+      "true_class_name": "Sneaker",
+      "predicted_class_name": "Sandal",
+      "errors": 7
+    },
+    {
+      "true_class_id": 8,
+      "predicted_class_id": 6,
+      "true_class_name": "Bag",
+      "predicted_class_name": "Shirt",
+      "errors": 7
+    },
+    {
+      "true_class_id": 3,
+      "predicted_class_id": 0,
+      "true_class_name": "Dress",
+      "predicted_class_name": "T-shirt/top",
+      "errors": 6
+    },
+    {
+      "true_class_id": 1,
+      "predicted_class_id": 3,
+      "true_class_name": "Trouser",
+      "predicted_class_name": "Dress",
+      "errors": 5
+    },
+    {
+      "true_class_id": 8,
+      "predicted_class_id": 4,
+      "true_class_name": "Bag",
+      "predicted_class_name": "Coat",
+      "errors": 5
+    },
+    {
+      "true_class_id": 0,
+      "predicted_class_id": 4,
+      "true_class_name": "T-shirt/top",
+      "predicted_class_name": "Coat",
+      "errors": 4
+    },
+    {
+      "true_class_id": 2,
+      "predicted_class_id": 0,
+      "true_class_name": "Pullover",
+      "predicted_class_name": "T-shirt/top",
+      "errors": 4
+    },
+    {
+      "true_class_id": 6,
+      "predicted_class_id": 8,
+      "true_class_name": "Shirt",
+      "predicted_class_name": "Bag",
+      "errors": 4
+    },
+    {
+      "true_class_id": 8,
+      "predicted_class_id": 3,
+      "true_class_name": "Bag",
+      "predicted_class_name": "Dress",
+      "errors": 4
+    },
+    {
+      "true_class_id": 0,
+      "predicted_class_id": 2,
+      "true_class_name": "T-shirt/top",
+      "predicted_class_name": "Pullover",
+      "errors": 3
+    },
+    {
+      "true_class_id": 0,
+      "predicted_class_id": 1,
+      "true_class_name": "T-shirt/top",
+      "predicted_class_name": "Trouser",
+      "errors": 2
+    },
+    {
+      "true_class_id": 0,
+      "predicted_class_id": 8,
+      "true_class_name": "T-shirt/top",
+      "predicted_class_name": "Bag",
+      "errors": 2
+    },
+    {
+      "true_class_id": 1,
+      "predicted_class_id": 2,
+      "true_class_name": "Trouser",
+      "predicted_class_name": "Pullover",
+      "errors": 2
+    },
+    {
+      "true_class_id": 1,
+      "predicted_class_id": 6,
+      "true_class_name": "Trouser",
+      "predicted_class_name": "Shirt",
+      "errors": 2
+    },
+    {
+      "true_class_id": 3,
+      "predicted_class_id": 8,
+      "true_class_name": "Dress",
+      "predicted_class_name": "Bag",
+      "errors": 2
+    },
+    {
+      "true_class_id": 4,
+      "predicted_class_id": 1,
+      "true_class_name": "Coat",
+      "predicted_class_name": "Trouser",
+      "errors": 2
+    },
+    {
+      "true_class_id": 6,
+      "predicted_class_id": 1,
+      "true_class_name": "Shirt",
+      "predicted_class_name": "Trouser",
+      "errors": 2
+    },
+    {
+      "true_class_id": 1,
+      "predicted_class_id": 8,
+      "true_class_name": "Trouser",
+      "predicted_class_name": "Bag",
+      "errors": 1
+    },
+    {
+      "true_class_id": 2,
+      "predicted_class_id": 1,
+      "true_class_name": "Pullover",
+      "predicted_class_name": "Trouser",
+      "errors": 1
+    },
+    {
+      "true_class_id": 2,
+      "predicted_class_id": 8,
+      "true_class_name": "Pullover",
+      "predicted_class_name": "Bag",
+      "errors": 1
+    },
+    {
+      "true_class_id": 3,
+      "predicted_class_id": 2,
+      "true_class_name": "Dress",
+      "predicted_class_name": "Pullover",
+      "errors": 1
+    },
+    {
+      "true_class_id": 4,
+      "predicted_class_id": 0,
+      "true_class_name": "Coat",
+      "predicted_class_name": "T-shirt/top",
+      "errors": 1
+    },
+    {
+      "true_class_id": 4,
+      "predicted_class_id": 8,
+      "true_class_name": "Coat",
+      "predicted_class_name": "Bag",
+      "errors": 1
+    },
+    {
+      "true_class_id": 7,
+      "predicted_class_id": 8,
+      "true_class_name": "Sneaker",
+      "predicted_class_name": "Bag",
+      "errors": 1
+    },
+    {
+      "true_class_id": 8,
+      "predicted_class_id": 5,
+      "true_class_name": "Bag",
+      "predicted_class_name": "Sandal",
+      "errors": 1
+    },
+    {
+      "true_class_id": 8,
+      "predicted_class_id": 7,
+      "true_class_name": "Bag",
+      "predicted_class_name": "Sneaker",
+      "errors": 1
+    },
+    {
+      "true_class_id": 9,
+      "predicted_class_id": 5,
+      "true_class_name": "Ankle boot",
+      "predicted_class_name": "Sandal",
+      "errors": 1
+    }
+  ],
+  "strategy_2_selection_log": [
+    {
+      "true_class_id": 0,
+      "predicted_class_id": 1,
+      "true_class_name": "T-shirt/top",
+      "predicted_class_name": "Trouser",
+      "nij": 2,
+      "desired_kij": 3,
+      "kij": 3,
+      "available": 14,
+      "selected": 3,
+      "min_selected_score": -6.705217361450195,
+      "max_selected_score": -4.410116195678711
+    },
+    {
+      "true_class_id": 0,
+      "predicted_class_id": 2,
+      "true_class_name": "T-shirt/top",
+      "predicted_class_name": "Pullover",
+      "nij": 3,
+      "desired_kij": 5,
+      "kij": 5,
+      "available": 37,
+      "selected": 5,
+      "min_selected_score": -8.813332557678223,
+      "max_selected_score": -7.9303693771362305
+    },
+    {
+      "true_class_id": 0,
+      "predicted_class_id": 3,
+      "true_class_name": "T-shirt/top",
+      "predicted_class_name": "Dress",
+      "nij": 20,
+      "desired_kij": 34,
+      "kij": 34,
+      "available": 147,
+      "selected": 34,
+      "min_selected_score": -12.011518478393555,
+      "max_selected_score": -4.999721527099609
+    },
+    {
+      "true_class_id": 0,
+      "predicted_class_id": 4,
+      "true_class_name": "T-shirt/top",
+      "predicted_class_name": "Coat",
+      "nij": 4,
+      "desired_kij": 7,
+      "kij": 7,
+      "available": 19,
+      "selected": 7,
+      "min_selected_score": -12.70224666595459,
+      "max_selected_score": -5.383576393127441
+    },
+    {
+      "true_class_id": 0,
+      "predicted_class_id": 6,
+      "true_class_name": "T-shirt/top",
+      "predicted_class_name": "Shirt",
+      "nij": 57,
+      "desired_kij": 96,
+      "kij": 97,
+      "available": 369,
+      "selected": 97,
+      "min_selected_score": -7.0313215255737305,
+      "max_selected_score": -2.1948680877685547
+    },
+    {
+      "true_class_id": 0,
+      "predicted_class_id": 8,
+      "true_class_name": "T-shirt/top",
+      "predicted_class_name": "Bag",
+      "nij": 2,
+      "desired_kij": 3,
+      "kij": 3,
+      "available": 12,
+      "selected": 3,
+      "min_selected_score": -9.512495040893555,
+      "max_selected_score": -7.97799015045166
+    },
+    {
+      "true_class_id": 1,
+      "predicted_class_id": 2,
+      "true_class_name": "Trouser",
+      "predicted_class_name": "Pullover",
+      "nij": 2,
+      "desired_kij": 3,
+      "kij": 3,
+      "available": 4,
+      "selected": 3,
+      "min_selected_score": -10.29377269744873,
+      "max_selected_score": -9.479621887207031
+    },
+    {
+      "true_class_id": 1,
+      "predicted_class_id": 3,
+      "true_class_name": "Trouser",
+      "predicted_class_name": "Dress",
+      "nij": 5,
+      "desired_kij": 8,
+      "kij": 8,
+      "available": 35,
+      "selected": 8,
+      "min_selected_score": -13.74116039276123,
+      "max_selected_score": -10.458641052246094
+    },
+    {
+      "true_class_id": 1,
+      "predicted_class_id": 6,
+      "true_class_name": "Trouser",
+      "predicted_class_name": "Shirt",
+      "nij": 2,
+      "desired_kij": 3,
+      "kij": 3,
+      "available": 10,
+      "selected": 3,
+      "min_selected_score": -13.20893383026123,
+      "max_selected_score": -11.073556900024414
+    },
+    {
+      "true_class_id": 1,
+      "predicted_class_id": 8,
+      "true_class_name": "Trouser",
+      "predicted_class_name": "Bag",
+      "nij": 1,
+      "desired_kij": 2,
+      "kij": 2,
+      "available": 3,
+      "selected": 2,
+      "min_selected_score": -10.391471862792969,
+      "max_selected_score": -8.712385177612305
+    },
+    {
+      "true_class_id": 2,
+      "predicted_class_id": 0,
+      "true_class_name": "Pullover",
+      "predicted_class_name": "T-shirt/top",
+      "nij": 4,
+      "desired_kij": 7,
+      "kij": 7,
+      "available": 46,
+      "selected": 7,
+      "min_selected_score": -8.491313934326172,
+      "max_selected_score": -5.49666690826416
+    },
+    {
+      "true_class_id": 2,
+      "predicted_class_id": 1,
+      "true_class_name": "Pullover",
+      "predicted_class_name": "Trouser",
+      "nij": 1,
+      "desired_kij": 2,
+      "kij": 2,
+      "available": 3,
+      "selected": 2,
+      "min_selected_score": -1.5802383422851562,
+      "max_selected_score": -0.6934013366699219
+    },
+    {
+      "true_class_id": 2,
+      "predicted_class_id": 3,
+      "true_class_name": "Pullover",
+      "predicted_class_name": "Dress",
+      "nij": 10,
+      "desired_kij": 17,
+      "kij": 17,
+      "available": 39,
+      "selected": 17,
+      "min_selected_score": -7.06146240234375,
+      "max_selected_score": -3.711772918701172
+    },
+    {
+      "true_class_id": 2,
+      "predicted_class_id": 4,
+      "true_class_name": "Pullover",
+      "predicted_class_name": "Coat",
+      "nij": 55,
+      "desired_kij": 93,
+      "kij": 93,
+      "available": 188,
+      "selected": 93,
+      "min_selected_score": -6.650245666503906,
+      "max_selected_score": -1.8165044784545898
+    },
+    {
+      "true_class_id": 2,
+      "predicted_class_id": 6,
+      "true_class_name": "Pullover",
+      "predicted_class_name": "Shirt",
+      "nij": 24,
+      "desired_kij": 41,
+      "kij": 41,
+      "available": 119,
+      "selected": 41,
+      "min_selected_score": -6.193010330200195,
+      "max_selected_score": -1.3967533111572266
+    },
+    {
+      "true_class_id": 2,
+      "predicted_class_id": 8,
+      "true_class_name": "Pullover",
+      "predicted_class_name": "Bag",
+      "nij": 1,
+      "desired_kij": 2,
+      "kij": 2,
+      "available": 4,
+      "selected": 2,
+      "min_selected_score": -5.356110572814941,
+      "max_selected_score": -4.478935241699219
+    },
+    {
+      "true_class_id": 3,
+      "predicted_class_id": 0,
+      "true_class_name": "Dress",
+      "predicted_class_name": "T-shirt/top",
+      "nij": 6,
+      "desired_kij": 10,
+      "kij": 10,
+      "available": 42,
+      "selected": 10,
+      "min_selected_score": -8.439082145690918,
+      "max_selected_score": -4.456340789794922
+    },
+    {
+      "true_class_id": 3,
+      "predicted_class_id": 1,
+      "true_class_name": "Dress",
+      "predicted_class_name": "Trouser",
+      "nij": 8,
+      "desired_kij": 14,
+      "kij": 14,
+      "available": 48,
+      "selected": 14,
+      "min_selected_score": -4.168705940246582,
+      "max_selected_score": 3.1113100051879883
+    },
+    {
+      "true_class_id": 3,
+      "predicted_class_id": 2,
+      "true_class_name": "Dress",
+      "predicted_class_name": "Pullover",
+      "nij": 1,
+      "desired_kij": 2,
+      "kij": 2,
+      "available": 10,
+      "selected": 2,
+      "min_selected_score": -7.081974983215332,
+      "max_selected_score": -4.198463439941406
+    },
+    {
+      "true_class_id": 3,
+      "predicted_class_id": 4,
+      "true_class_name": "Dress",
+      "predicted_class_name": "Coat",
+      "nij": 22,
+      "desired_kij": 37,
+      "kij": 37,
+      "available": 174,
+      "selected": 37,
+      "min_selected_score": -9.519636154174805,
+      "max_selected_score": -3.439530372619629
+    },
+    {
+      "true_class_id": 3,
+      "predicted_class_id": 6,
+      "true_class_name": "Dress",
+      "predicted_class_name": "Shirt",
+      "nij": 18,
+      "desired_kij": 30,
+      "kij": 30,
+      "available": 70,
+      "selected": 30,
+      "min_selected_score": -7.680835723876953,
+      "max_selected_score": -4.567099571228027
+    },
+    {
+      "true_class_id": 3,
+      "predicted_class_id": 8,
+      "true_class_name": "Dress",
+      "predicted_class_name": "Bag",
+      "nij": 2,
+      "desired_kij": 3,
+      "kij": 1,
+      "available": 1,
+      "selected": 1,
+      "min_selected_score": -1.1611824035644531,
+      "max_selected_score": -1.1611824035644531
+    },
+    {
+      "true_class_id": 4,
+      "predicted_class_id": 0,
+      "true_class_name": "Coat",
+      "predicted_class_name": "T-shirt/top",
+      "nij": 1,
+      "desired_kij": 2,
+      "kij": 2,
+      "available": 4,
+      "selected": 2,
+      "min_selected_score": -4.100566864013672,
+      "max_selected_score": -2.727128028869629
+    },
+    {
+      "true_class_id": 4,
+      "predicted_class_id": 1,
+      "true_class_name": "Coat",
+      "predicted_class_name": "Trouser",
+      "nij": 2,
+      "desired_kij": 3,
+      "kij": 3,
+      "available": 9,
+      "selected": 3,
+      "min_selected_score": -13.523516654968262,
+      "max_selected_score": -9.068887710571289
+    },
+    {
+      "true_class_id": 4,
+      "predicted_class_id": 2,
+      "true_class_name": "Coat",
+      "predicted_class_name": "Pullover",
+      "nij": 42,
+      "desired_kij": 71,
+      "kij": 71,
+      "available": 128,
+      "selected": 71,
+      "min_selected_score": -5.233816146850586,
+      "max_selected_score": -0.7209682464599609
+    },
+    {
+      "true_class_id": 4,
+      "predicted_class_id": 3,
+      "true_class_name": "Coat",
+      "predicted_class_name": "Dress",
+      "nij": 16,
+      "desired_kij": 27,
+      "kij": 27,
+      "available": 107,
+      "selected": 27,
+      "min_selected_score": -12.969085693359375,
+      "max_selected_score": -6.46506404876709
+    },
+    {
+      "true_class_id": 4,
+      "predicted_class_id": 6,
+      "true_class_name": "Coat",
+      "predicted_class_name": "Shirt",
+      "nij": 19,
+      "desired_kij": 32,
+      "kij": 32,
+      "available": 58,
+      "selected": 32,
+      "min_selected_score": -6.063129425048828,
+      "max_selected_score": -0.790797233581543
+    },
+    {
+      "true_class_id": 4,
+      "predicted_class_id": 8,
+      "true_class_name": "Coat",
+      "predicted_class_name": "Bag",
+      "nij": 1,
+      "desired_kij": 2,
+      "kij": 2,
+      "available": 4,
+      "selected": 2,
+      "min_selected_score": -2.403972625732422,
+      "max_selected_score": -0.2899208068847656
+    },
+    {
+      "true_class_id": 5,
+      "predicted_class_id": 7,
+      "true_class_name": "Sandal",
+      "predicted_class_name": "Sneaker",
+      "nij": 11,
+      "desired_kij": 19,
+      "kij": 19,
+      "available": 113,
+      "selected": 19,
+      "min_selected_score": -12.014237403869629,
+      "max_selected_score": -7.89262056350708
+    },
+    {
+      "true_class_id": 5,
+      "predicted_class_id": 9,
+      "true_class_name": "Sandal",
+      "predicted_class_name": "Ankle boot",
+      "nij": 9,
+      "desired_kij": 15,
+      "kij": 15,
+      "available": 42,
+      "selected": 15,
+      "min_selected_score": -9.873465538024902,
+      "max_selected_score": -3.0706958770751953
+    },
+    {
+      "true_class_id": 6,
+      "predicted_class_id": 0,
+      "true_class_name": "Shirt",
+      "predicted_class_name": "T-shirt/top",
+      "nij": 61,
+      "desired_kij": 103,
+      "kij": 104,
+      "available": 226,
+      "selected": 104,
+      "min_selected_score": -10.154220581054688,
+      "max_selected_score": -3.459535598754883
+    },
+    {
+      "true_class_id": 6,
+      "predicted_class_id": 1,
+      "true_class_name": "Shirt",
+      "predicted_class_name": "Trouser",
+      "nij": 2,
+      "desired_kij": 3,
+      "kij": 3,
+      "available": 12,
+      "selected": 3,
+      "min_selected_score": -15.346671104431152,
+      "max_selected_score": -3.9196882247924805
+    },
+    {
+      "true_class_id": 6,
+      "predicted_class_id": 2,
+      "true_class_name": "Shirt",
+      "predicted_class_name": "Pullover",
+      "nij": 47,
+      "desired_kij": 79,
+      "kij": 79,
+      "available": 130,
+      "selected": 79,
+      "min_selected_score": -6.415348529815674,
+      "max_selected_score": -1.6159210205078125
+    },
+    {
+      "true_class_id": 6,
+      "predicted_class_id": 3,
+      "true_class_name": "Shirt",
+      "predicted_class_name": "Dress",
+      "nij": 21,
+      "desired_kij": 35,
+      "kij": 35,
+      "available": 118,
+      "selected": 35,
+      "min_selected_score": -10.57983112335205,
+      "max_selected_score": -3.0689077377319336
+    },
+    {
+      "true_class_id": 6,
+      "predicted_class_id": 4,
+      "true_class_name": "Shirt",
+      "predicted_class_name": "Coat",
+      "nij": 52,
+      "desired_kij": 88,
+      "kij": 88,
+      "available": 274,
+      "selected": 88,
+      "min_selected_score": -6.353496551513672,
+      "max_selected_score": -1.5101079940795898
+    },
+    {
+      "true_class_id": 6,
+      "predicted_class_id": 8,
+      "true_class_name": "Shirt",
+      "predicted_class_name": "Bag",
+      "nij": 4,
+      "desired_kij": 7,
+      "kij": 7,
+      "available": 24,
+      "selected": 7,
+      "min_selected_score": -2.9958715438842773,
+      "max_selected_score": -0.6345844268798828
+    },
+    {
+      "true_class_id": 7,
+      "predicted_class_id": 5,
+      "true_class_name": "Sneaker",
+      "predicted_class_name": "Sandal",
+      "nij": 7,
+      "desired_kij": 12,
+      "kij": 12,
+      "available": 49,
+      "selected": 12,
+      "min_selected_score": -4.981049537658691,
+      "max_selected_score": -1.38507080078125
+    },
+    {
+      "true_class_id": 7,
+      "predicted_class_id": 8,
+      "true_class_name": "Sneaker",
+      "predicted_class_name": "Bag",
+      "nij": 1,
+      "desired_kij": 2,
+      "kij": 2,
+      "available": 7,
+      "selected": 2,
+      "min_selected_score": -11.22230339050293,
+      "max_selected_score": -7.374002456665039
+    },
+    {
+      "true_class_id": 7,
+      "predicted_class_id": 9,
+      "true_class_name": "Sneaker",
+      "predicted_class_name": "Ankle boot",
+      "nij": 15,
+      "desired_kij": 25,
+      "kij": 25,
+      "available": 149,
+      "selected": 25,
+      "min_selected_score": -11.217723846435547,
+      "max_selected_score": -4.697985649108887
+    },
+    {
+      "true_class_id": 8,
+      "predicted_class_id": 3,
+      "true_class_name": "Bag",
+      "predicted_class_name": "Dress",
+      "nij": 4,
+      "desired_kij": 7,
+      "kij": 7,
+      "available": 17,
+      "selected": 7,
+      "min_selected_score": -11.212835311889648,
+      "max_selected_score": -7.087038993835449
+    },
+    {
+      "true_class_id": 8,
+      "predicted_class_id": 4,
+      "true_class_name": "Bag",
+      "predicted_class_name": "Coat",
+      "nij": 5,
+      "desired_kij": 8,
+      "kij": 8,
+      "available": 25,
+      "selected": 8,
+      "min_selected_score": -14.214385986328125,
+      "max_selected_score": -9.282476425170898
+    },
+    {
+      "true_class_id": 8,
+      "predicted_class_id": 5,
+      "true_class_name": "Bag",
+      "predicted_class_name": "Sandal",
+      "nij": 1,
+      "desired_kij": 2,
+      "kij": 2,
+      "available": 16,
+      "selected": 2,
+      "min_selected_score": -8.130722045898438,
+      "max_selected_score": -4.684695243835449
+    },
+    {
+      "true_class_id": 8,
+      "predicted_class_id": 6,
+      "true_class_name": "Bag",
+      "predicted_class_name": "Shirt",
+      "nij": 7,
+      "desired_kij": 12,
+      "kij": 12,
+      "available": 37,
+      "selected": 12,
+      "min_selected_score": -15.169532775878906,
+      "max_selected_score": -7.029288291931152
+    },
+    {
+      "true_class_id": 8,
+      "predicted_class_id": 7,
+      "true_class_name": "Bag",
+      "predicted_class_name": "Sneaker",
+      "nij": 1,
+      "desired_kij": 2,
+      "kij": 2,
+      "available": 12,
+      "selected": 2,
+      "min_selected_score": -13.61639404296875,
+      "max_selected_score": -9.02248477935791
+    },
+    {
+      "true_class_id": 9,
+      "predicted_class_id": 5,
+      "true_class_name": "Ankle boot",
+      "predicted_class_name": "Sandal",
+      "nij": 1,
+      "desired_kij": 2,
+      "kij": 2,
+      "available": 18,
+      "selected": 2,
+      "min_selected_score": -10.466973304748535,
+      "max_selected_score": -7.328906059265137
+    },
+    {
+      "true_class_id": 9,
+      "predicted_class_id": 7,
+      "true_class_name": "Ankle boot",
+      "predicted_class_name": "Sneaker",
+      "nij": 12,
+      "desired_kij": 20,
+      "kij": 20,
+      "available": 109,
+      "selected": 20,
+      "min_selected_score": -14.024717330932617,
+      "max_selected_score": -8.776174545288086
+    }
+  ]
+}
