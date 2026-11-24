@@ -1,0 +1,81 @@
+{
+  "experiment": "EDNNA",
+  "initial_dataset": "F-A",
+  "candidate_dataset": "F-B",
+  "total_budget": 1000,
+  "add_per_iteration": 200,
+  "initial_train_size": 10800,
+  "final_train_size": 11800,
+  "initial_pool_size": 43200,
+  "final_pool_size": 42200,
+  "selected_count": 1000,
+  "device": "cuda",
+  "seed_base": 1000,
+  "iteration_summaries": [
+    {
+      "iteration": 1,
+      "errors_in_A": 383,
+      "accepted_candidates": 236,
+      "selected_this_iteration": 200,
+      "train_size_after": 11000,
+      "pool_size_after": 43000,
+      "best_epoch": 29,
+      "best_stage": 2,
+      "validation_loss": 0.2770026106039683,
+      "validation_accuracy": 0.9056666666666666,
+      "status": "completed"
+    },
+    {
+      "iteration": 2,
+      "errors_in_A": 371,
+      "accepted_candidates": 204,
+      "selected_this_iteration": 200,
+      "train_size_after": 11200,
+      "pool_size_after": 42800,
+      "best_epoch": 29,
+      "best_stage": 2,
+      "validation_loss": 0.25799288868904113,
+      "validation_accuracy": 0.9081666666666667,
+      "status": "completed"
+    },
+    {
+      "iteration": 3,
+      "errors_in_A": 568,
+      "accepted_candidates": 294,
+      "selected_this_iteration": 200,
+      "train_size_after": 11400,
+      "pool_size_after": 42600,
+      "best_epoch": 24,
+      "best_stage": 2,
+      "validation_loss": 0.2689340690771739,
+      "validation_accuracy": 0.9036666666666666,
+      "status": "completed"
+    },
+    {
+      "iteration": 4,
+      "errors_in_A": 635,
+      "accepted_candidates": 296,
+      "selected_this_iteration": 200,
+      "train_size_after": 11600,
+      "pool_size_after": 42400,
+      "best_epoch": 24,
+      "best_stage": 2,
+      "validation_loss": 0.2613642885684967,
+      "validation_accuracy": 0.9093333333333333,
+      "status": "completed"
+    },
+    {
+      "iteration": 5,
+      "errors_in_A": 600,
+      "accepted_candidates": 267,
+      "selected_this_iteration": 200,
+      "train_size_after": 11800,
+      "pool_size_after": 42200,
+      "best_epoch": 24,
+      "best_stage": 2,
+      "validation_loss": 0.26436455114682517,
+      "validation_accuracy": 0.909,
+      "status": "completed"
+    }
+  ]
+}

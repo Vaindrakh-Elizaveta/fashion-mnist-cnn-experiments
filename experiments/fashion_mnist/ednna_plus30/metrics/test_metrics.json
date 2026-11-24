@@ -1,0 +1,9 @@
+{
+  "experiment": "EDNNA",
+  "train_size": 14040,
+  "test_size": 10000,
+  "selected_count": 3240,
+  "test_accuracy": 0.9,
+  "macro_f1": 0.8997944685919335,
+  "seed": 42
+}

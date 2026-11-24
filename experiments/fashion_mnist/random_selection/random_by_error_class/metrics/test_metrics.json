@@ -1,0 +1,16 @@
+{
+  "experiment": "Random by error class",
+  "train_size": 14040,
+  "validation_size": 6000,
+  "test_size": 10000,
+  "selected_count": 3240,
+  "checkpoint_epoch": 29,
+  "checkpoint_stage": 2,
+  "validation_loss": 0.26629461538791654,
+  "validation_accuracy": 0.9123333333333333,
+  "test_accuracy": 0.8988,
+  "macro_f1": 0.8993883510251587,
+  "selection_method": "error_proportional_random",
+  "selection_seed": 2027,
+  "train_seed": 3000
+}

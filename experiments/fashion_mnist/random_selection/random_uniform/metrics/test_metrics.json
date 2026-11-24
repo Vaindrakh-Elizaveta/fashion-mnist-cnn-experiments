@@ -1,0 +1,16 @@
+{
+  "experiment": "Random uniform",
+  "train_size": 14040,
+  "validation_size": 6000,
+  "test_size": 10000,
+  "selected_count": 3240,
+  "checkpoint_epoch": 27,
+  "checkpoint_stage": 2,
+  "validation_loss": 0.2537865287860235,
+  "validation_accuracy": 0.9121666666666667,
+  "test_accuracy": 0.8973,
+  "macro_f1": 0.8970038815913624,
+  "selection_method": "uniform_random",
+  "selection_seed": 2026,
+  "train_seed": 3000
+}
